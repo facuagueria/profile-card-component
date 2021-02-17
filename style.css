@@ -1,0 +1,111 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Kumbh Sans', sans-serif;
+    background-color: hsl(185, 75%, 39%);
+    position: fixed;
+    justify-content: center;
+    width: 100vw;
+}
+.body{
+    min-height: 100vh;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card{
+    display: grid;
+    grid-template-columns: 350px;
+    grid-template-rows: auto;
+    text-align: center;
+    background-color: white;
+    position: fixed;
+    /*width: 450px;*/
+    height: 375px;
+    border-radius: 10px;
+    box-shadow: 0 1px 10px 1px hsl(227, 10%, 46%);
+}
+.img-header{
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.img{
+    margin-top: -15%;
+    border-radius: 100%;
+    border: 5px solid white;
+    position: relative;
+}
+.info{
+    margin: -20px 0 20px 0;
+}
+span{
+    display: inline-block;
+}
+#name{
+    margin: 15px 0 0;
+}
+#age{
+    font-weight: 400;
+    margin: 15px 0 0 5px;
+}
+
+#from{
+    font-size: 15px;
+}
+.card-stats{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    border-top: 1px solid #e7e7e7;
+    padding: 20px 15px 0 15px;
+    line-height: 1.5;
+}
+.desc{
+    font-weight: 400;
+    font-size: 10px;
+}
+#age, #from, .desc{
+    color: hsl(227, 10%, 46%);
+}
+h3,#name{
+    font-size: 18px;
+    font-weight: 700;
+}
+#from{
+    margin-top: 10px;
+}
+
+.attribution {
+    margin-top: -20px;
+    font-size: 11px; text-align: center;
+}
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+.pattern-top{
+    position: absolute;
+    bottom: 35%;
+    right: 53%;
+}
+
+.pattern-bottom{
+    position: absolute;
+    left: 50%;
+    top: 48%;
+    z-index: -1;
+}
+
+@media (min-width:0px) and (max-width:375px) {
+    .card{
+        display: grid;
+        grid-template-columns: 300px;
+    }
+    .img-header{
+        width: 300px;
+    }
+}
